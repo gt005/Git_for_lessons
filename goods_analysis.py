@@ -1,6 +1,5 @@
 def goods_analysis(*args, in_sale=lambda x: "молоко" in x["название"].lower()):
-    args = filter(lambda x: x['количество'] > 0, args)
-    return (sorted(filter(in_sale, args), key=lambda x: x['цена'])[:3])
+    return sorted(filter(in_sale, args), key=lambda x: x['цена'])[:3]
 
 
 if __name__ == '__main__':
