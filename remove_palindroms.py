@@ -6,9 +6,3 @@ def remove_palindroms(spells):
             spells.pop(i)
             continue
         i += 1
-
-
-if __name__ == '__main__':
-    spells = ['Dog', 'a b', 'a']
-    remove_palindroms(spells)
-    print(spells)
